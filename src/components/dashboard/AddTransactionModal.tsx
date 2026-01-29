@@ -8,7 +8,7 @@ import type { TransactionFormData, Category } from "@/types/database";
 interface AddTransactionModalProps {
     isOpen: boolean;
     onClose: () => void;
-    onSubmit: (data: TransactionFormData) => Promise<void>;
+    onSubmit: (data: TransactionFormData) => Promise<string | void | undefined>;
     categories: Category[];
 }
 
